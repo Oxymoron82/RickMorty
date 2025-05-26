@@ -1,0 +1,17 @@
+.mainWrapper {
+  background: linear-gradient(var(--slate-200), var(--slate-200-20)),
+    url("../../assets/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh; /* сохраняем фон на весь экран */
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* ⬅️ вместо center — выравнивание по верху */
+
+  padding-top: 40px; /* отступ сверху от границы блока до кнопок */
+  gap: 20px;
+  flex-wrap: wrap;
+}

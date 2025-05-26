@@ -1,0 +1,71 @@
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  background-color: #334154;
+  border-radius: 5px;
+}
+
+.search {
+  height: 60px;
+  border: 2px solid;
+  font-size: 24px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin: 20px 0 30px 10px;
+  width: calc(100% - 60px);
+}
+
+.characterLink {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.pageContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.linkButton {
+  background-color: #2c3e50; /* темный фон */
+  color: #ecf0f1; /* светлый текст */
+  padding: 12px 24px; /* отступы внутри кнопки */
+  font-size: 16px; /* размер шрифта */
+  border: none; /* без рамки */
+  border-radius: 8px; /* скругленные края */
+  margin: 0 10px; /* отступ между кнопками */
+  cursor: pointer; /* курсор при наведении */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* тень */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.linkButton:hover {
+  background-color: #3b5165; /* цвет при наведении */
+  transform: scale(1.05); /* немного увеличивается */
+  &:disabled {
+    background-color: var(--slate-200);
+    color: bisque;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
